@@ -1,0 +1,74 @@
+.slider {
+    width:800px;
+    height:300px;
+    overflow: hidden;
+    margin:auto;
+}
+
+.slides {
+    width:800px * 4;
+    height:300px;
+
+}
+
+.slide {
+    float: left;
+    animation:slider 15s alternate infinite;
+}
+
+.slide_1 {
+    background-color: red;
+    width:800px;
+    height:300px;
+}
+
+.slide_2 {
+    background-color: green;
+    width:800px;
+    height:300px;
+}
+
+.slide_3 {
+    background-color: blue;
+    width:800px;
+    height:300px;
+}
+
+.slide_4 {
+    background-color: yellow;
+    width:800px;
+    height:300px;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-800px);
+    }
+
+    49% {
+        transform: translateX(-800px);
+    }
+
+    
+
+    66% {
+        transform: translateX(-1600px);
+    }
+
+    83% {
+        transform: translateX(-1600px);
+    }
+
+
+    100% {
+        transform: translateX(-2400px);
+    }
+} 
