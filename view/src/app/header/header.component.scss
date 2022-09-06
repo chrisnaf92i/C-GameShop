@@ -1,0 +1,18 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 16px 0;
+
+    nav {
+        display: flex;
+        align-items: flex-end;
+        a {
+            margin:0 8px;
+
+            &:hover {
+               color:orange;
+            }
+        }
+    }
+}
