@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+//reset
+body {
+    background-color: rgb(14, 22, 27);
+    color:rgb(255, 233, 233);
+    width:95%;
+    margin:auto;
+}
+
+
+a {
+    color:rgb(255, 233, 233);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
