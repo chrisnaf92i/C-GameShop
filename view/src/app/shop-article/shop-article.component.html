@@ -1,0 +1,11 @@
+<article [class]="articleData.plateform">
+    <img [src]="articleData.imageUrl" alt="test">
+    <div class="description">
+        <div class="description__top">
+            <h1> {{ articleData.name }} </h1>
+            <p> {{ articleData.price / 100 }} €</p>
+        </div>
+        <p *ngIf="articleData.type != 'Console'"> {{ articleData.plateform }} </p>
+    </div>
+
+</article>
