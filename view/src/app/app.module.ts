@@ -6,13 +6,15 @@ import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ShopArticleComponent } from './shop-article/shop-article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SliderComponent,
-    HomePageComponent
+    HomePageComponent,
+    ShopArticleComponent
   ],
   imports: [
     BrowserModule,
