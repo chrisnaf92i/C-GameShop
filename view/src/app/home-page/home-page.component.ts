@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { articleShop } from '../model/article.model';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home-page',
@@ -9,9 +10,18 @@ import { articleShop } from '../model/article.model';
 export class HomePageComponent implements OnInit {
   
   articleList!:articleShop[];
+  private articlesListUrl = "http://localhost:3000/api/article"
+
+  constructor (private _httpClient:HttpClient) {
+
+  }
 
   ngOnInit(): void {
-    this.articleList = [
+    this._httpClient.get<articleShop[]>(this.articlesListUrl)
+      .subscribe(articlesListReponse => {
+        this.articleList = articlesListReponse;
+      })
+    /* this.articleList = [
       {
         name:"The Witcher 3",
         type:"Jeu",
@@ -62,8 +72,7 @@ export class HomePageComponent implements OnInit {
         editor:"Square Enix",
         imageUrl:"https://m.media-amazon.com/images/I/71c5+FqTicS._AC_SX569_.jpg"
       },
-      
-    ]
+    ] */
   }
 
 }
