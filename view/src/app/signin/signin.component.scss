@@ -1,0 +1,33 @@
+section {
+    position:absolute;
+    width:30%;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+
+    text-align: center;
+    legend {
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        width:50%;
+        margin: 0 auto;
+        margin:8px auto; 
+    }
+   
+    input {
+        border-radius: 25px;
+        padding:8px
+    }
+
+    button {
+        border-radius: 15px;
+        padding:8px;
+        color:white;
+        background-color: rgb(255, 102, 0);
+        border:none;
+        cursor:pointer;
+    }
+}

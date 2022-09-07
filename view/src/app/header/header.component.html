@@ -1,10 +1,19 @@
 <header>
     <h1> C-Game Shop </h1>
 
+    <div class="searchBar">
+        <input type="search" placeholder="ex : jeux, console, etc"/>
+        <button><fa-icon [icon]="searchIcon"></fa-icon></button>
+    </div>
+
     <nav>
-        <a href="#"> <h2> Acceuil </h2> </a>
-        <a href="#"> <h2> Catégories </h2> </a>
-        <a href="#"> <h2> Pannier </h2> </a>
-        <a href="#"> <h2> Commander </h2> </a>
+        <a routerLink="acceuil" > <h2> Acceuil </h2> </a>
+        <!-- Si Connecter -->
+        <a routerLink="pannier" *ngIf="user != undefined || user != null"> <h2> Pannier </h2> </a>
+        <a routerLink="commander" *ngIf="user != undefined || user != null"> <h2> Commander </h2> </a>
+        <!-- Si déconnecter -->
+        <a routerLink="inscription" *ngIf="user == undefined || user == null"> <h2> S'inscrire </h2> </a>
+        <a routerLink="connexion" *ngIf="user == undefined || user == null"> <h2> Se Connecter</h2> </a>
+
     </nav>
 </header>

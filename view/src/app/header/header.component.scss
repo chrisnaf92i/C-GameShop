@@ -4,9 +4,32 @@ header {
     align-items: flex-end;
     margin: 16px 0;
 
+    .searchBar {
+        background-color: rgba(81, 100, 117, 0.329);
+        padding:8px;
+        border-radius: 25px;
+
+        input {
+            padding:8px;
+            background-color: transparent;
+            border:none;
+            color:white;
+            :focus {
+                outline:none;
+            }
+        }
+        button {
+            background-color: transparent;
+            border:none;
+            color:white;
+            padding:8px;
+        }
+    }
+
     nav {
         display: flex;
         align-items: flex-end;
+        
         a {
             margin:0 8px;
 

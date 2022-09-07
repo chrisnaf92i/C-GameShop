@@ -7,6 +7,13 @@ import { SliderComponent } from './slider/slider.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ShopArticleComponent } from './shop-article/shop-article.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { CategoriePageComponent } from './categorie-page/categorie-page.component';
+import { CommandComponent } from './command/command.component';
+import { SigninComponent } from './signin/signin.component';
+import { LoginComponent } from './login/login.component';
+import { PannierComponent } from './pannier/pannier.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +21,19 @@ import { ShopArticleComponent } from './shop-article/shop-article.component';
     HeaderComponent,
     SliderComponent,
     HomePageComponent,
-    ShopArticleComponent
+    ShopArticleComponent,
+    CategoriePageComponent,
+    CommandComponent,
+    SigninComponent,
+    LoginComponent,
+    PannierComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
