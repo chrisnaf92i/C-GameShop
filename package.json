@@ -4,6 +4,8 @@
   "description": "Site de vente de jeux vidéo",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +19,11 @@
   },
   "homepage": "https://github.com/chrisnaf92i/C-GameShop#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mongoose": "^6.5.4",
     "nodemon": "^2.0.19"
-  }
+  },
+  "type": "module"
 }
