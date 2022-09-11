@@ -1,11 +1,11 @@
 <section>
-    <form>
+    <form (ngSubmit)="onSubmitSignInForm()">
         <fieldset>
             <legend> <h1> Inscription : </h1> </legend>
 
             <label>
                 <p>Nom d'utilisateur :</p>
-                <input type="text" required/>
+                <input type="text" name="userName" placeholder="jean" required [(ngModel)]="userName" />
             </label>
             
             <br/>
@@ -13,7 +13,7 @@
 
             <label>
                 <p>Email :</p>
-                <input type="email" required/>
+                <input type="email" name="email" placeholder="jean@email.fr" required  [(ngModel)]="userEmail"/>
             </label>
             
             <br/>
@@ -21,7 +21,7 @@
 
             <label>
                 <p>Adresse de livraison :</p>
-                <input type="text" required/>
+                <input type="text" name="delivaryAdress" placeholder="Paris, 01 rue du héron" required    [(ngModel)]="userDeliveryAdress"/>
             </label>
             
             <br/>
@@ -29,7 +29,7 @@
 
             <label>
                 <p>Mot de passe :</p>
-                <input type="text" required/>
+                <input type="password" name="password" required [(ngModel)]="userPassword"/>
             </label>
             
             <br/>
@@ -43,7 +43,7 @@
             <br/>
             <br/>
             
-            <button> <h3> Inscription </h3> </button>
+            <button type="submit"> <h3> Inscription </h3> </button>
         </fieldset>
     </form>
 </section>

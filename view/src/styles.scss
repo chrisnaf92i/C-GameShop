@@ -17,3 +17,13 @@ a {
 h1, h2, h3, h4, h5, h6, p {
     margin:0;
 }
+
+
+button {
+    border-radius: 15px;
+    padding:8px;
+    color:white;
+    background-color: rgb(255, 102, 0);
+    border:none;
+    cursor:pointer;
+}

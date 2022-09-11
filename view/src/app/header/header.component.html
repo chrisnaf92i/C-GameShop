@@ -11,6 +11,7 @@
         <!-- Si Connecter -->
         <a routerLink="pannier" *ngIf="user != undefined || user != null"> <h2> Pannier </h2> </a>
         <a routerLink="commander" *ngIf="user != undefined || user != null"> <h2> Commander </h2> </a>
+        <a class="deconnection" (onclick)="onClickDisconnect()" *ngIf="user != undefined || user != null"> <h2> Se déconnecter </h2> </a>
         <!-- Si déconnecter -->
         <a routerLink="inscription" *ngIf="user == undefined || user == null"> <h2> S'inscrire </h2> </a>
         <a routerLink="connexion" *ngIf="user == undefined || user == null"> <h2> Se Connecter</h2> </a>

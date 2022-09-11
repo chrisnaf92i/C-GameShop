@@ -14,6 +14,8 @@ import { CommandComponent } from './command/command.component';
 import { SigninComponent } from './signin/signin.component';
 import { LoginComponent } from './login/login.component';
 import { PannierComponent } from './pannier/pannier.component';
+import { FormsModule } from '@angular/forms';
+import { ArticlePageComponent } from './article-page/article-page.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { PannierComponent } from './pannier/pannier.component';
     CommandComponent,
     SigninComponent,
     LoginComponent,
-    PannierComponent
+    PannierComponent,
+    ArticlePageComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

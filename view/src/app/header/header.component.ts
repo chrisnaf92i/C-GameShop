@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,7 +10,17 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit {
   searchIcon = faMagnifyingGlass;
   user = localStorage.getItem("user");
+
+  constructor (private route:Router) {
+
+  }
+
   ngOnInit(): void {
+  }
+
+  onClickDisconnect () {
+    localStorage.removeItem("user");
+    this.route.navigateByUrl("acceuil")
   }
 
 }

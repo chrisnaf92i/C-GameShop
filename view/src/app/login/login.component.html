@@ -1,1 +1,27 @@
-<p>login works!</p>
+<section>
+    <form (ngSubmit)="onSubmitLogin()">
+        <fieldset>
+            <legend> <h1> Se connecter </h1> </legend>
+            
+            <label>
+                Email :
+                <br>
+                <input type="email" name="email" require [(ngModel)]="userEmail">
+            </label>
+
+            <br>
+            <br>
+
+            <label>
+                Mot de passe :
+                <br>
+                <input type="password" name="password" [(ngModel)]="userPassword">
+            </label>
+            
+            <br> 
+            <br>
+
+            <button type="submit"> <h3> Connexion </h3> </button>
+        </fieldset>
+    </form>
+</section>

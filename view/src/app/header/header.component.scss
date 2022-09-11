@@ -4,6 +4,10 @@ header {
     align-items: flex-end;
     margin: 16px 0;
 
+    .deconnection {
+        cursor:pointer;
+    }
+
     .searchBar {
         background-color: rgba(81, 100, 117, 0.329);
         padding:8px;

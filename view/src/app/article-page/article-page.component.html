@@ -1,0 +1,16 @@
+<section>
+    <div class="imageContainer">
+        <img [src]="article.imageUrl">
+
+    </div>
+    <h1> {{article.name}} </h1>
+
+    <div>
+        <p>{{article.sinopsis}}</p>
+
+        <p> {{article.price / 100}} € </p>
+    </div>
+
+    <button *ngIf="!isConnected"> Se connecter pour acheter </button>
+    <button *ngIf="isConnected"> Ajouter au parnnier </button>
+</section>
